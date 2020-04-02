@@ -102,7 +102,7 @@ class FirstViewController: UIViewController {
     func ScanPhoto(capturedPhoto: UIImage){
         
         if let tesseract = G8Tesseract(language: "bul"){
-            
+            print("helo")
             tesseract.engineMode = .tesseractCubeCombined
             tesseract.pageSegmentationMode = .auto
             tesseract.image = capturedPhoto

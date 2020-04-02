@@ -52,7 +52,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Сканирай" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Сканирай" image="arkit" catalog="system" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="Label" destination="zGA-fK-Zz7" id="Srp-We-L3g"/>
                         <outlet property="Значение" destination="k31-BZ-eaW" id="Iyv-pG-2ca"/>
@@ -115,7 +115,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Речник" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Речник" image="pencil.circle.fill" catalog="system" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="Label" destination="sxA-Te-Ngw" id="PxX-yf-rYw"/>
                         <outlet property="Въведете" destination="la6-Ej-1ZB" id="cOM-u4-K3p"/>
@@ -146,7 +146,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="arkit" catalog="system" width="64" height="64"/>
+        <image name="pencil.circle.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>
