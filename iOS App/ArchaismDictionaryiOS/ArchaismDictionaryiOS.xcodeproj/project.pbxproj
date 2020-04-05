@@ -10,9 +10,6 @@
 		CD4900C62433E230005759A8 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4900C52433E22F005759A8 /* 120.png */; };
 		CD96EA70243817FF00321270 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD96EA6F243817FF00321270 /* FirebaseCore.framework */; };
 		CD96EA7224381AEE00321270 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD96EA7124381AEE00321270 /* GoogleService-Info.plist */; };
-		CDC04CFD243360B6007EBF5F /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC04CFC243360B5007EBF5F /* CoreImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		CDC04D00243360CC007EBF5F /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC04CFC243360B5007EBF5F /* CoreImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		CDC04D2B2433CC05007EBF5F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDC04D2A2433CC05007EBF5F /* Info.plist */; };
 		CDC04D392433D07F007EBF5F /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC04CF624328E7C007EBF5F /* CoreImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CDD45756242B05B000AC3512 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD45755242B05B000AC3512 /* AppDelegate.swift */; };
 		CDD45758242B05B000AC3512 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD45757242B05B000AC3512 /* SceneDelegate.swift */; };
@@ -20,27 +17,8 @@
 		CDD4575C242B05B000AC3512 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD4575B242B05B000AC3512 /* SecondViewController.swift */; };
 		CDD4575F242B05B000AC3512 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD4575D242B05B000AC3512 /* Main.storyboard */; };
 		CDD45764242B05B500AC3512 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD45762242B05B500AC3512 /* LaunchScreen.storyboard */; };
-		CDD4576F242B05B500AC3512 /* ArchaismDictionaryiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD4576E242B05B500AC3512 /* ArchaismDictionaryiOSTests.swift */; };
-		CDD4577A242B05B500AC3512 /* ArchaismDictionaryiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD45779242B05B500AC3512 /* ArchaismDictionaryiOSUITests.swift */; };
 		F7B1217D70F9F6531792B448 /* Pods_ArchaismDictionaryiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B2ED8CA9D16C3B88C2CD3E /* Pods_ArchaismDictionaryiOS.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CDD4576B242B05B500AC3512 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CDD4574A242B05B000AC3512 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CDD45751242B05B000AC3512;
-			remoteInfo = ArchaismDictionaryiOS;
-		};
-		CDD45776242B05B500AC3512 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CDD4574A242B05B000AC3512 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CDD45751242B05B000AC3512;
-			remoteInfo = ArchaismDictionaryiOS;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		622F1AF23CD7CB519F7326D1 /* Pods-ArchaismDictionaryiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchaismDictionaryiOS.debug.xcconfig"; path = "Target Support Files/Pods-ArchaismDictionaryiOS/Pods-ArchaismDictionaryiOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,9 +40,7 @@
 		CDD4575E242B05B000AC3512 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDD45760242B05B500AC3512 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDD45763242B05B500AC3512 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CDD4576A242B05B500AC3512 /* ArchaismDictionaryiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchaismDictionaryiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD4576E242B05B500AC3512 /* ArchaismDictionaryiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchaismDictionaryiOSTests.swift; sourceTree = "<group>"; };
-		CDD45775242B05B500AC3512 /* ArchaismDictionaryiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchaismDictionaryiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD45779242B05B500AC3512 /* ArchaismDictionaryiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchaismDictionaryiOSUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,22 +52,6 @@
 				CD96EA70243817FF00321270 /* FirebaseCore.framework in Frameworks */,
 				CDC04D392433D07F007EBF5F /* CoreImage.framework in Frameworks */,
 				F7B1217D70F9F6531792B448 /* Pods_ArchaismDictionaryiOS.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDD45767242B05B500AC3512 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CDC04CFD243360B6007EBF5F /* CoreImage.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDD45772242B05B500AC3512 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CDC04D00243360CC007EBF5F /* CoreImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				CDD45752242B05B000AC3512 /* ArchaismBg.app */,
-				CDD4576A242B05B500AC3512 /* ArchaismDictionaryiOSTests.xctest */,
-				CDD45775242B05B500AC3512 /* ArchaismDictionaryiOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,42 +156,6 @@
 			productReference = CDD45752242B05B000AC3512 /* ArchaismBg.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CDD45769242B05B500AC3512 /* ArchaismDictionaryiOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CDD45781242B05B500AC3512 /* Build configuration list for PBXNativeTarget "ArchaismDictionaryiOSTests" */;
-			buildPhases = (
-				CDD45766242B05B500AC3512 /* Sources */,
-				CDD45767242B05B500AC3512 /* Frameworks */,
-				CDD45768242B05B500AC3512 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CDD4576C242B05B500AC3512 /* PBXTargetDependency */,
-			);
-			name = ArchaismDictionaryiOSTests;
-			productName = ArchaismDictionaryiOSTests;
-			productReference = CDD4576A242B05B500AC3512 /* ArchaismDictionaryiOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CDD45774242B05B500AC3512 /* ArchaismDictionaryiOSUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CDD45784242B05B500AC3512 /* Build configuration list for PBXNativeTarget "ArchaismDictionaryiOSUITests" */;
-			buildPhases = (
-				CDD45771242B05B500AC3512 /* Sources */,
-				CDD45772242B05B500AC3512 /* Frameworks */,
-				CDD45773242B05B500AC3512 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CDD45777242B05B500AC3512 /* PBXTargetDependency */,
-			);
-			name = ArchaismDictionaryiOSUITests;
-			productName = ArchaismDictionaryiOSUITests;
-			productReference = CDD45775242B05B500AC3512 /* ArchaismDictionaryiOSUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -246,14 +168,6 @@
 				TargetAttributes = {
 					CDD45751242B05B000AC3512 = {
 						CreatedOnToolsVersion = 11.3.1;
-					};
-					CDD45769242B05B500AC3512 = {
-						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = CDD45751242B05B000AC3512;
-					};
-					CDD45774242B05B500AC3512 = {
-						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = CDD45751242B05B000AC3512;
 					};
 				};
 			};
@@ -271,8 +185,6 @@
 			projectRoot = "";
 			targets = (
 				CDD45751242B05B000AC3512 /* ArchaismDictionaryiOS */,
-				CDD45769242B05B500AC3512 /* ArchaismDictionaryiOSTests */,
-				CDD45774242B05B500AC3512 /* ArchaismDictionaryiOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -286,21 +198,6 @@
 				CD96EA7224381AEE00321270 /* GoogleService-Info.plist in Resources */,
 				CD4900C62433E230005759A8 /* 120.png in Resources */,
 				CDD4575F242B05B000AC3512 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDD45768242B05B500AC3512 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CDC04D2B2433CC05007EBF5F /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDD45773242B05B500AC3512 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,36 +274,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CDD45766242B05B500AC3512 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CDD4576F242B05B500AC3512 /* ArchaismDictionaryiOSTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDD45771242B05B500AC3512 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CDD4577A242B05B500AC3512 /* ArchaismDictionaryiOSUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CDD4576C242B05B500AC3512 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CDD45751242B05B000AC3512 /* ArchaismDictionaryiOS */;
-			targetProxy = CDD4576B242B05B500AC3512 /* PBXContainerItemProxy */;
-		};
-		CDD45777242B05B500AC3512 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CDD45751242B05B000AC3512 /* ArchaismDictionaryiOS */;
-			targetProxy = CDD45776242B05B500AC3512 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CDD4575D242B05B000AC3512 /* Main.storyboard */ = {
@@ -572,7 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 648H2X26Z6;
+				DEVELOPMENT_TEAM = 6CL8HBW84L;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ArchaismDictionaryiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -583,91 +451,6 @@
 				PRODUCT_NAME = ArchaismBg;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		CDD45782242B05B500AC3512 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ArchaismDictionaryiOSTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = ARLearn.ArchaismDictionaryiOSTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArchaismDictionaryiOS.app/ArchaismDictionaryiOS";
-			};
-			name = Debug;
-		};
-		CDD45783242B05B500AC3512 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6CL8HBW84L;
-				INFOPLIST_FILE = ArchaismDictionaryiOSTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = ARLearn.ArchaismDictionaryiOSTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArchaismDictionaryiOS.app/ArchaismDictionaryiOS";
-			};
-			name = Release;
-		};
-		CDD45785242B05B500AC3512 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ArchaismDictionaryiOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = ARLearn.ArchaismDictionaryiOSUITests;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ArchaismDictionaryiOS;
-			};
-			name = Debug;
-		};
-		CDD45786242B05B500AC3512 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6CL8HBW84L;
-				INFOPLIST_FILE = ArchaismDictionaryiOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = ARLearn.ArchaismDictionaryiOSUITests;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = AR.ArchaismiOSUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ArchaismDictionaryiOS;
 			};
 			name = Release;
 		};
@@ -688,24 +471,6 @@
 			buildConfigurations = (
 				CDD4577F242B05B500AC3512 /* Debug */,
 				CDD45780242B05B500AC3512 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CDD45781242B05B500AC3512 /* Build configuration list for PBXNativeTarget "ArchaismDictionaryiOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CDD45782242B05B500AC3512 /* Debug */,
-				CDD45783242B05B500AC3512 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CDD45784242B05B500AC3512 /* Build configuration list for PBXNativeTarget "ArchaismDictionaryiOSUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CDD45785242B05B500AC3512 /* Debug */,
-				CDD45786242B05B500AC3512 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
