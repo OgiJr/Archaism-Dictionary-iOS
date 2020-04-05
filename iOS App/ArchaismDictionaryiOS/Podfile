@@ -5,6 +5,6 @@
 target 'ArchaismDictionaryiOS' do
 
 use_frameworks!
-pod 'TesseractOCRiOS'
+pod 'Firebase/MLVisionTextModel'
 
 end

@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD10574E24369794002C0713 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4900BC2433DAFA005759A8 /* TesseractOCR.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		CD4900BF2433DB36005759A8 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = CD4900BE2433DB36005759A8 /* tessdata */; };
 		CD4900C62433E230005759A8 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4900C52433E22F005759A8 /* 120.png */; };
+		CD96EA70243817FF00321270 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD96EA6F243817FF00321270 /* FirebaseCore.framework */; };
+		CD96EA7224381AEE00321270 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD96EA7124381AEE00321270 /* GoogleService-Info.plist */; };
 		CDC04CFD243360B6007EBF5F /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC04CFC243360B5007EBF5F /* CoreImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CDC04D00243360CC007EBF5F /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC04CFC243360B5007EBF5F /* CoreImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CDC04D2B2433CC05007EBF5F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDC04D2A2433CC05007EBF5F /* Info.plist */; };
@@ -47,8 +47,9 @@
 		73B2ED8CA9D16C3B88C2CD3E /* Pods_ArchaismDictionaryiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArchaismDictionaryiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC76D66F8DBE2E3083803F0 /* Pods-ArchaismDictionaryiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchaismDictionaryiOS.release.xcconfig"; path = "Target Support Files/Pods-ArchaismDictionaryiOS/Pods-ArchaismDictionaryiOS.release.xcconfig"; sourceTree = "<group>"; };
 		CD4900BC2433DAFA005759A8 /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD4900BE2433DB36005759A8 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		CD4900C52433E22F005759A8 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120.png; sourceTree = "<group>"; };
+		CD96EA6F243817FF00321270 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD96EA7124381AEE00321270 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CDC04CF624328E7C007EBF5F /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		CDC04CFC243360B5007EBF5F /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
 		CDC04D282433CBF9007EBF5F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,8 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD96EA70243817FF00321270 /* FirebaseCore.framework in Frameworks */,
 				CDC04D392433D07F007EBF5F /* CoreImage.framework in Frameworks */,
-				CD10574E24369794002C0713 /* TesseractOCR.framework in Frameworks */,
 				F7B1217D70F9F6531792B448 /* Pods_ArchaismDictionaryiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +101,7 @@
 		AFD1D9AD0B89BDFC44157B33 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD96EA6F243817FF00321270 /* FirebaseCore.framework */,
 				CD4900BC2433DAFA005759A8 /* TesseractOCR.framework */,
 				CDC04CFC243360B5007EBF5F /* CoreImage.framework */,
 				CDC04CF624328E7C007EBF5F /* CoreImage.framework */,
@@ -120,8 +122,8 @@
 		CDD45749242B05B000AC3512 = {
 			isa = PBXGroup;
 			children = (
+				CD96EA7124381AEE00321270 /* GoogleService-Info.plist */,
 				CD4900C52433E22F005759A8 /* 120.png */,
-				CD4900BE2433DB36005759A8 /* tessdata */,
 				CDD45754242B05B000AC3512 /* ArchaismDictionaryiOS */,
 				CDD4576D242B05B500AC3512 /* ArchaismDictionaryiOSTests */,
 				CDD45778242B05B500AC3512 /* ArchaismDictionaryiOSUITests */,
@@ -185,6 +187,7 @@
 				CDD4574F242B05B000AC3512 /* Frameworks */,
 				CDD45750242B05B000AC3512 /* Resources */,
 				826AD4D4B0DD104B6F605A72 /* [CP] Embed Pods Frameworks */,
+				44FC6EB9051431264FE338BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,7 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDD45764242B05B500AC3512 /* LaunchScreen.storyboard in Resources */,
-				CD4900BF2433DB36005759A8 /* tessdata in Resources */,
+				CD96EA7224381AEE00321270 /* GoogleService-Info.plist in Resources */,
 				CD4900C62433E230005759A8 /* 120.png in Resources */,
 				CDD4575F242B05B000AC3512 /* Main.storyboard in Resources */,
 			);
@@ -304,6 +307,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		44FC6EB9051431264FE338BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArchaismDictionaryiOS/Pods-ArchaismDictionaryiOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArchaismDictionaryiOS/Pods-ArchaismDictionaryiOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArchaismDictionaryiOS/Pods-ArchaismDictionaryiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		826AD4D4B0DD104B6F605A72 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -532,13 +552,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CL8HBW84L;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ArchaismDictionaryiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ARLearn.ArchaismDictionaryiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AR.ArchaismDictionary;
 				PRODUCT_NAME = ArchaismBg;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -551,13 +572,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 648H2X26Z6;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ArchaismDictionaryiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ARLearn.ArchaismDictionaryiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AR.ArchaismDictionary;
 				PRODUCT_NAME = ArchaismBg;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -591,6 +613,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CL8HBW84L;
 				INFOPLIST_FILE = ArchaismDictionaryiOSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -618,6 +641,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ARLearn.ArchaismDictionaryiOSUITests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -629,7 +653,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CL8HBW84L;
 				INFOPLIST_FILE = ArchaismDictionaryiOSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -637,6 +663,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ARLearn.ArchaismDictionaryiOSUITests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = AR.ArchaismiOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

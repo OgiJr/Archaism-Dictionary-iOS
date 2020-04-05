@@ -8,13 +8,15 @@
 
 import UIKit
 import AVFoundation
-import TesseractOCR
+import Firebase
+import FirebaseMLVision
 
 class FirstViewController: UIViewController {
     
     @IBOutlet weak var ImageView: UIImageView!
     @IBOutlet weak var Значение: UILabel!
     @IBOutlet weak var Label: UILabel!
+    @IBOutlet weak var Activity: UIActivityIndicatorView!
     
     let session = AVCaptureSession()
     var camera : AVCaptureDevice?
@@ -58,6 +60,10 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         InitializeCaptureSession()
+        DictionaryManager()
+        FirebaseApp.configure()
+        Activity.hidesWhenStopped = true
+        Activity.stopAnimating()
     }
     
     func InitializeCaptureSession(){
@@ -92,24 +98,34 @@ class FirstViewController: UIViewController {
     }
         
     func TakePicture(){
-        
         let settings = AVCapturePhotoSettings()
         settings.flashMode = .auto
         cameraCaptureOutput?.capturePhoto(with: settings, delegate: self)
     }
     
-    
     func ScanPhoto(capturedPhoto: UIImage){
+        Значение.text = "Моля изчакайте..."
+        Activity.startAnimating()
+        var filteredImage: UIImage
+        filteredImage = capturedPhoto.imageRotatedByDegrees(degrees: 90, flip: false)
+        filteredImage = filteredImage.toGrayScale()
+
+        let vision = Vision.vision()
+        let options = VisionCloudTextRecognizerOptions()
+        options.languageHints = ["bg"]
+        let textRecognizer = vision.cloudTextRecognizer(options: options)
+
+        let visionImage = VisionImage(image: capturedPhoto)
         
-        if let tesseract = G8Tesseract(language: "bul"){
-            print("helo")
-            tesseract.engineMode = .tesseractCubeCombined
-            tesseract.pageSegmentationMode = .auto
-            tesseract.image = capturedPhoto
-            tesseract.recognize()
-            
-            ocrResult = tesseract.recognizedText ?? ""
-            
+        textRecognizer.process(visionImage) { result, error in
+            guard error == nil, let result = result else {
+            return
+          }
+            self.ocrResult = result.text
+        }
+        
+        print(ocrResult)
+        
             if(ocrResult != ""){
             
                 let result = SearchInDictionary(input: ocrResult)
@@ -131,11 +147,7 @@ class FirstViewController: UIViewController {
                 Label.text = array
             }
         }
-    }
-        else{
-            Значение.text = "Използвайте речника"
-            Label.text = "Сканирането ще бъде добавено в следваща версия на приложението."
-        }
+        Activity.stopAnimating()
 }
     
     func DictionaryManager()
@@ -167,23 +179,33 @@ class FirstViewController: UIViewController {
     }
     
         func SearchInDictionary(input: String) -> String{
-            let size = dataBase.count
-            let count = 0...size - 1
-            var result: String = ""
             
-            for number in count{
-                if(input.lowercased() == dataBase[number][0].lowercased()){
+            let size = dataBase.count
+            var result: String = ""
+
+            print(input)
+
+            if(size > 0){
+                let resultArr = input.split{[" ", "\n"].contains($0.description)}.map(String.init)
+            let sizeArr = resultArr.count
+            let countArr = 0...sizeArr-1
+            let count = 0...size - 1
+            
+                for word in countArr{
+                    if(result == ""){
+                for number in count{
+                if(resultArr[word] == dataBase[number][0].lowercased()){
                     result = dataBase[number][0] + " " + dataBase[number][1]
                 }
-                else if result.isEmpty{
-                        if(input.lowercased().contains(dataBase[number][0].lowercased())){
-                            result = dataBase[number][0] + " " + dataBase[number][1]
-                        }
                     }
+                    }
+                }
+                if(result == ""){
+                    result = "Грешка: Не засякахме дума, която е в речника."
+                }
+            }
+    return result
     }
-            print(result)
-            return result
-}
     
     @IBAction func Button(_ sender: UIButton) {
         TakePicture()
@@ -214,4 +236,65 @@ class ImagePreview: FirstViewController{
         super.viewDidLoad()
         ImageView.image = capturedImage
     }
+}
+
+extension UIImage {
+
+    public func imageRotatedByDegrees(degrees: CGFloat, flip: Bool) -> UIImage {
+        let radiansToDegrees: (CGFloat) -> CGFloat = {
+            return $0 * (180.0 / CGFloat.pi)
+        }
+        let degreesToRadians: (CGFloat) -> CGFloat = {
+            return $0 / 180.0 * CGFloat.pi
+        }
+
+        // calculate the size of the rotated view's containing box for our drawing space
+        let rotatedViewBox = UIView(frame: CGRect(origin: .zero, size: size))
+        let t = CGAffineTransform(rotationAngle: degreesToRadians(degrees));
+        rotatedViewBox.transform = t
+        let rotatedSize = rotatedViewBox.frame.size
+
+        // Create the bitmap context
+        UIGraphicsBeginImageContext(rotatedSize)
+        let bitmap = UIGraphicsGetCurrentContext()
+
+        // Move the origin to the middle of the image so we will rotate and scale around the center.
+        bitmap?.translateBy(x: rotatedSize.width / 2.0, y: rotatedSize.height / 2.0)
+
+        //   // Rotate the image context
+        bitmap?.rotate(by: degreesToRadians(degrees))
+
+        // Now, draw the rotated/scaled image into the context
+        var yFlip: CGFloat
+
+        if(flip){
+            yFlip = CGFloat(-1.0)
+        } else {
+            yFlip = CGFloat(1.0)
+        }
+
+        bitmap?.scaleBy(x: yFlip, y: -1.0)
+        let rect = CGRect(x: -size.width / 2, y: -size.height / 2, width: size.width, height: size.height)
+
+        bitmap?.draw(cgImage!, in: rect)
+
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        return newImage!
+    }
+    func toGrayScale() -> UIImage {
+
+          let greyImage = UIImageView()
+          greyImage.image = self
+          let context = CIContext(options: nil)
+          let currentFilter = CIFilter(name: "CIPhotoEffectNoir")
+          currentFilter!.setValue(CIImage(image: greyImage.image!), forKey: kCIInputImageKey)
+          let output = currentFilter!.outputImage
+          let cgimg = context.createCGImage(output!,from: output!.extent)
+          let processedImage = UIImage(cgImage: cgimg!)
+          greyImage.image = processedImage
+
+          return greyImage.image!
+      }
 }
