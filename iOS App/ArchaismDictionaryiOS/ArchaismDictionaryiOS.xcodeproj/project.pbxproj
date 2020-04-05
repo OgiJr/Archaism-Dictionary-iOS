@@ -7,9 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD4900C62433E230005759A8 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4900C52433E22F005759A8 /* 120.png */; };
 		CD96EA70243817FF00321270 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD96EA6F243817FF00321270 /* FirebaseCore.framework */; };
 		CD96EA762439EA0800321270 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD96EA752439EA0800321270 /* GoogleService-Info.plist */; };
+		CD96EA91243A3EF100321270 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4900C52433E22F005759A8 /* 120.png */; };
+		CD96EA92243A416B00321270 /* 152.png in Resources */ = {isa = PBXBuildFile; fileRef = CD96EA8F243A3D9F00321270 /* 152.png */; };
+		CD96EA93243A416B00321270 /* 20.png in Resources */ = {isa = PBXBuildFile; fileRef = CD96EA8B243A3D5D00321270 /* 20.png */; };
+		CD96EA94243A416B00321270 /* 29.png in Resources */ = {isa = PBXBuildFile; fileRef = CD96EA8C243A3D6200321270 /* 29.png */; };
+		CD96EA95243A416B00321270 /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = CD96EA7B243A276A00321270 /* 40.png */; };
+		CD96EA97243A416B00321270 /* 76.png in Resources */ = {isa = PBXBuildFile; fileRef = CD96EA86243A3D4900321270 /* 76.png */; };
+		CD96EA98243A416B00321270 /* 167.png in Resources */ = {isa = PBXBuildFile; fileRef = CD96EA87243A3D4E00321270 /* 167.png */; };
+		CD96EA99243A416B00321270 /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = CD96EA7C243A276D00321270 /* 1024.png */; };
+		CD96EA9A243A416B00321270 /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = CD96EA79243A276100321270 /* 58.png */; };
+		CD96EA9B243A416B00321270 /* 60.png in Resources */ = {isa = PBXBuildFile; fileRef = CD96EA78243A275C00321270 /* 60.png */; };
+		CD96EA9C243A416B00321270 /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = CD96EA7E243A277300321270 /* 80.png */; };
+		CD96EA9D243A416B00321270 /* 87.png in Resources */ = {isa = PBXBuildFile; fileRef = CD96EA77243A275700321270 /* 87.png */; };
+		CD96EA9E243A416B00321270 /* 180.png in Resources */ = {isa = PBXBuildFile; fileRef = CD96EA7A243A276500321270 /* 180.png */; };
+		CD96EAA0243A4D5500321270 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD96EA9F243A4D5500321270 /* Images.xcassets */; };
 		CDC04D392433D07F007EBF5F /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC04CF624328E7C007EBF5F /* CoreImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CDD45756242B05B000AC3512 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD45755242B05B000AC3512 /* AppDelegate.swift */; };
 		CDD45758242B05B000AC3512 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD45757242B05B000AC3512 /* SceneDelegate.swift */; };
@@ -28,6 +41,19 @@
 		CD4900C52433E22F005759A8 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120.png; sourceTree = "<group>"; };
 		CD96EA6F243817FF00321270 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD96EA752439EA0800321270 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CD96EA77243A275700321270 /* 87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 87.png; sourceTree = "<group>"; };
+		CD96EA78243A275C00321270 /* 60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 60.png; sourceTree = "<group>"; };
+		CD96EA79243A276100321270 /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
+		CD96EA7A243A276500321270 /* 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 180.png; sourceTree = "<group>"; };
+		CD96EA7B243A276A00321270 /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 40.png; sourceTree = "<group>"; };
+		CD96EA7C243A276D00321270 /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024.png; sourceTree = "<group>"; };
+		CD96EA7E243A277300321270 /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80.png; sourceTree = "<group>"; };
+		CD96EA86243A3D4900321270 /* 76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 76.png; sourceTree = "<group>"; };
+		CD96EA87243A3D4E00321270 /* 167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 167.png; sourceTree = "<group>"; };
+		CD96EA8B243A3D5D00321270 /* 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20.png; sourceTree = "<group>"; };
+		CD96EA8C243A3D6200321270 /* 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29.png; sourceTree = "<group>"; };
+		CD96EA8F243A3D9F00321270 /* 152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 152.png; sourceTree = "<group>"; };
+		CD96EA9F243A4D5500321270 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CDC04CF624328E7C007EBF5F /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		CDC04CFC243360B5007EBF5F /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
 		CDC04D282433CBF9007EBF5F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,7 +64,6 @@
 		CDD45759242B05B000AC3512 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		CDD4575B242B05B000AC3512 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		CDD4575E242B05B000AC3512 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CDD45760242B05B500AC3512 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDD45763242B05B500AC3512 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDD4576E242B05B500AC3512 /* ArchaismDictionaryiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchaismDictionaryiOSTests.swift; sourceTree = "<group>"; };
 		CDD45779242B05B500AC3512 /* ArchaismDictionaryiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchaismDictionaryiOSUITests.swift; sourceTree = "<group>"; };
@@ -82,6 +107,18 @@
 		CDD45749242B05B000AC3512 = {
 			isa = PBXGroup;
 			children = (
+				CD96EA8F243A3D9F00321270 /* 152.png */,
+				CD96EA8B243A3D5D00321270 /* 20.png */,
+				CD96EA8C243A3D6200321270 /* 29.png */,
+				CD96EA7B243A276A00321270 /* 40.png */,
+				CD96EA86243A3D4900321270 /* 76.png */,
+				CD96EA87243A3D4E00321270 /* 167.png */,
+				CD96EA7C243A276D00321270 /* 1024.png */,
+				CD96EA79243A276100321270 /* 58.png */,
+				CD96EA78243A275C00321270 /* 60.png */,
+				CD96EA7E243A277300321270 /* 80.png */,
+				CD96EA77243A275700321270 /* 87.png */,
+				CD96EA7A243A276500321270 /* 180.png */,
 				CD4900C52433E22F005759A8 /* 120.png */,
 				CDD45754242B05B000AC3512 /* ArchaismDictionaryiOS */,
 				CDD4576D242B05B500AC3512 /* ArchaismDictionaryiOSTests */,
@@ -110,8 +147,8 @@
 				CDD45759242B05B000AC3512 /* FirstViewController.swift */,
 				CDD4575B242B05B000AC3512 /* SecondViewController.swift */,
 				CDD4575D242B05B000AC3512 /* Main.storyboard */,
-				CDD45760242B05B500AC3512 /* Assets.xcassets */,
 				CDD45762242B05B500AC3512 /* LaunchScreen.storyboard */,
+				CD96EA9F243A4D5500321270 /* Images.xcassets */,
 			);
 			path = ArchaismDictionaryiOS;
 			sourceTree = "<group>";
@@ -194,9 +231,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD96EA92243A416B00321270 /* 152.png in Resources */,
+				CD96EA93243A416B00321270 /* 20.png in Resources */,
+				CD96EA94243A416B00321270 /* 29.png in Resources */,
+				CD96EA95243A416B00321270 /* 40.png in Resources */,
+				CD96EA97243A416B00321270 /* 76.png in Resources */,
+				CD96EA98243A416B00321270 /* 167.png in Resources */,
+				CD96EA99243A416B00321270 /* 1024.png in Resources */,
+				CD96EA9A243A416B00321270 /* 58.png in Resources */,
+				CD96EA9B243A416B00321270 /* 60.png in Resources */,
+				CD96EA9C243A416B00321270 /* 80.png in Resources */,
+				CD96EA9D243A416B00321270 /* 87.png in Resources */,
+				CD96EAA0243A4D5500321270 /* Images.xcassets in Resources */,
+				CD96EA9E243A416B00321270 /* 180.png in Resources */,
+				CD96EA91243A3EF100321270 /* 120.png in Resources */,
 				CDD45764242B05B500AC3512 /* LaunchScreen.storyboard in Resources */,
 				CD96EA762439EA0800321270 /* GoogleService-Info.plist in Resources */,
-				CD4900C62433E230005759A8 /* 120.png in Resources */,
 				CDD4575F242B05B000AC3512 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 6CL8HBW84L;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ArchaismDictionaryiOS/Info.plist;
@@ -427,6 +478,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AR.ArchaismDictionary;
 				PRODUCT_NAME = ArchaismBg;
 				SWIFT_VERSION = 5.0;
@@ -440,6 +492,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 6CL8HBW84L;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ArchaismDictionaryiOS/Info.plist;
@@ -447,6 +500,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AR.ArchaismDictionary;
 				PRODUCT_NAME = ArchaismBg;
 				SWIFT_VERSION = 5.0;
