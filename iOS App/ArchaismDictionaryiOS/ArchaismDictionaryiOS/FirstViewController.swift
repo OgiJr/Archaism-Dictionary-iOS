@@ -194,7 +194,7 @@ class FirstViewController: UIViewController {
                 for word in countArr{
                     if(result == ""){
                 for number in count{
-                if(resultArr[word] == dataBase[number][0].lowercased()){
+                    if(resultArr[word].lowercased() == dataBase[number][0].lowercased()){
                     result = dataBase[number][0] + " " + dataBase[number][1]
                 }
                     }

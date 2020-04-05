@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CD4900C62433E230005759A8 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4900C52433E22F005759A8 /* 120.png */; };
 		CD96EA70243817FF00321270 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD96EA6F243817FF00321270 /* FirebaseCore.framework */; };
-		CD96EA7224381AEE00321270 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD96EA7124381AEE00321270 /* GoogleService-Info.plist */; };
+		CD96EA762439EA0800321270 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD96EA752439EA0800321270 /* GoogleService-Info.plist */; };
 		CDC04D392433D07F007EBF5F /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC04CF624328E7C007EBF5F /* CoreImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CDD45756242B05B000AC3512 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD45755242B05B000AC3512 /* AppDelegate.swift */; };
 		CDD45758242B05B000AC3512 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD45757242B05B000AC3512 /* SceneDelegate.swift */; };
@@ -27,7 +27,7 @@
 		CD4900BC2433DAFA005759A8 /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4900C52433E22F005759A8 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120.png; sourceTree = "<group>"; };
 		CD96EA6F243817FF00321270 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD96EA7124381AEE00321270 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CD96EA752439EA0800321270 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CDC04CF624328E7C007EBF5F /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		CDC04CFC243360B5007EBF5F /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
 		CDC04D282433CBF9007EBF5F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,7 +82,6 @@
 		CDD45749242B05B000AC3512 = {
 			isa = PBXGroup;
 			children = (
-				CD96EA7124381AEE00321270 /* GoogleService-Info.plist */,
 				CD4900C52433E22F005759A8 /* 120.png */,
 				CDD45754242B05B000AC3512 /* ArchaismDictionaryiOS */,
 				CDD4576D242B05B500AC3512 /* ArchaismDictionaryiOSTests */,
@@ -104,6 +103,7 @@
 		CDD45754242B05B000AC3512 /* ArchaismDictionaryiOS */ = {
 			isa = PBXGroup;
 			children = (
+				CD96EA752439EA0800321270 /* GoogleService-Info.plist */,
 				CDC04D282433CBF9007EBF5F /* Info.plist */,
 				CDD45755242B05B000AC3512 /* AppDelegate.swift */,
 				CDD45757242B05B000AC3512 /* SceneDelegate.swift */,
@@ -195,7 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDD45764242B05B500AC3512 /* LaunchScreen.storyboard in Resources */,
-				CD96EA7224381AEE00321270 /* GoogleService-Info.plist in Resources */,
+				CD96EA762439EA0800321270 /* GoogleService-Info.plist in Resources */,
 				CD4900C62433E230005759A8 /* 120.png in Resources */,
 				CDD4575F242B05B000AC3512 /* Main.storyboard in Resources */,
 			);

@@ -91,11 +91,6 @@ class SecondViewController: UIViewController {
             if(input.lowercased() == dataBase[number][0].lowercased()){
                 result = dataBase[number][0] + " " + dataBase[number][1]
             }
-            else if result.isEmpty{
-                    if(input.lowercased().contains(dataBase[number][0].lowercased())){
-                        result = dataBase[number][0] + " " + dataBase[number][1]
-                    }
-                }
 }
         print(result)
         return result
