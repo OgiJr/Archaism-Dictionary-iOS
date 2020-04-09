@@ -18,6 +18,13 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var Label: UILabel!
     @IBOutlet weak var Activity: UIActivityIndicatorView!
     
+    @IBOutlet weak var Background: UIImageView!
+    @IBOutlet weak var Instructions: UILabel!
+    @IBOutlet weak var Instructions2: UILabel!
+    @IBOutlet weak var Instructions3: UILabel!
+    @IBOutlet weak var InstructionsImage: UIImageView!
+    @IBOutlet weak var InstructionsImage2: UIImageView!
+    
     let session = AVCaptureSession()
     var camera : AVCaptureDevice?
     var cameraPreviewLayer: AVCaptureVideoPreviewLayer?
@@ -64,6 +71,20 @@ class FirstViewController: UIViewController {
         FirebaseApp.configure()
         Activity.hidesWhenStopped = true
         Activity.stopAnimating()
+        
+        let defaults: UserDefaults = UserDefaults.standard
+        let understood = defaults.value(forKey: "understood") as? Bool
+        
+        if(understood != nil){
+        Background.isHidden = true
+        Instructions.isHidden = true
+        Instructions2.isHidden = true
+        Instructions3.isHidden = true
+        InstructionsImage.isHidden = true
+        InstructionsImage2.isHidden = true
+        defaults.set(true, forKey: "understood")
+        defaults.synchronize()
+        }
     }
     
     func InitializeCaptureSession(){
@@ -104,6 +125,7 @@ class FirstViewController: UIViewController {
     }
     
     func ScanPhoto(capturedPhoto: UIImage){
+        
         Значение.text = "Моля изчакайте..."
         Activity.startAnimating()
         var filteredImage: UIImage
@@ -145,7 +167,7 @@ class FirstViewController: UIViewController {
                     }
                 }
                 Label.text = array
-            }
+                }
         }
         Activity.stopAnimating()
 }
@@ -208,7 +230,23 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func Button(_ sender: UIButton) {
+        let defaults: UserDefaults = UserDefaults.standard
+        let understood = defaults.value(forKey: "understood") as? Bool
+        
+        if(understood == nil){
+        Background.isHidden = true
+        Instructions.isHidden = true
+        Instructions2.isHidden = true
+        Instructions3.isHidden = true
+        InstructionsImage.isHidden = true
+        InstructionsImage2.isHidden = true
+        defaults.set(true, forKey: "understood")
+        defaults.synchronize()
+        }
+            
+        else{
         TakePicture()
+        }
     }
 }
 

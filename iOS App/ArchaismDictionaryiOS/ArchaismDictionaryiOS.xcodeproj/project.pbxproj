@@ -30,6 +30,7 @@
 		CDD4575C242B05B000AC3512 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD4575B242B05B000AC3512 /* SecondViewController.swift */; };
 		CDD4575F242B05B000AC3512 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD4575D242B05B000AC3512 /* Main.storyboard */; };
 		CDD45764242B05B500AC3512 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD45762242B05B500AC3512 /* LaunchScreen.storyboard */; };
+		CDD4F295243D99B300BE7C6E /* Instructions.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD4F294243D99B200BE7C6E /* Instructions.png */; };
 		F7B1217D70F9F6531792B448 /* Pods_ArchaismDictionaryiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B2ED8CA9D16C3B88C2CD3E /* Pods_ArchaismDictionaryiOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		CDD45763242B05B500AC3512 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDD4576E242B05B500AC3512 /* ArchaismDictionaryiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchaismDictionaryiOSTests.swift; sourceTree = "<group>"; };
 		CDD45779242B05B500AC3512 /* ArchaismDictionaryiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchaismDictionaryiOSUITests.swift; sourceTree = "<group>"; };
+		CDD4F294243D99B200BE7C6E /* Instructions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Instructions.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		CDD45749242B05B000AC3512 = {
 			isa = PBXGroup;
 			children = (
+				CDD4F294243D99B200BE7C6E /* Instructions.png */,
 				CD96EA8F243A3D9F00321270 /* 152.png */,
 				CD96EA8B243A3D5D00321270 /* 20.png */,
 				CD96EA8C243A3D6200321270 /* 29.png */,
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD4F295243D99B300BE7C6E /* Instructions.png in Resources */,
 				CD96EA92243A416B00321270 /* 152.png in Resources */,
 				CD96EA93243A416B00321270 /* 20.png in Resources */,
 				CD96EA94243A416B00321270 /* 29.png in Resources */,
@@ -470,7 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = 6CL8HBW84L;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ArchaismDictionaryiOS/Info.plist;
@@ -478,7 +482,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.7;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AR.ArchaismDictionary;
 				PRODUCT_NAME = ArchaismBg;
 				SWIFT_VERSION = 5.0;
@@ -492,7 +496,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = 6CL8HBW84L;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ArchaismDictionaryiOS/Info.plist;
@@ -500,7 +504,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.7;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AR.ArchaismDictionary;
 				PRODUCT_NAME = ArchaismBg;
 				SWIFT_VERSION = 5.0;
